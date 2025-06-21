@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Swipe Mode</title>
+
+  <!-- Link Swiper.js CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <style>
+    
+
+    /* Swiper styling */
+   .swiper {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    height: 80vh; /* Adjusts height dynamically based on screen */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    height: 80vh; /* Uses viewport height for better responsiveness */
+    width: 100%; /* Ensures image fills the container */
+    object-fit: cover;
+}
+
+/* Responsive Fix for Smaller Screens */
+@media (max-width: 768px) {
+    .swiper {
+        height: 60vh; /* Adjusts height dynamically for smaller screens */
+    }
+
+    .swiper-slide img {
+        height: 60vh;
+    }
+}
+
+   .describe{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: clamp(14px, 1.5vw, 20px);
+    line-height: 1.1;
+    text-align: justify;
+   }
+   
+    .footer {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            bottom: 0;
+        }
+
+  </style>
+
+</head>
+
+<body style ="padding-top:17vh;">
+
+  <div id="header-placeholder"></div>
+<script>
+  fetch("Homeduplixxxxx.html")
+    .then(response => response.text())
+    .then(data => document.getElementById("header-placeholder").innerHTML = data);
+</script>
+ 
+
+  <!-- Swiper container -->
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="markoflower.jpg" alt="Photo 1">
+    </div>
+    <div class="swiper-slide">
+      <img src="cbb.png" alt="Photo 2">
+    </div>
+    <div class="swiper-slide">
+      <img src="WhatsApp Image 2024-09-05 at 19.29.25_a3ff3ae8.jpg" alt="Photo 3">
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+<!-- Include Swiper.js script -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  // Initialize Swiper with autoplay and manual navigation
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 3000, // Swipes every 3 seconds
+      disableOnInteraction: false // Allows manual swiping without stopping autoplay
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+  <!--<p style="font-style: italic; font-size: large;font-weight: bold;color: blue; align-content: center;">BIODIVERSITY OF DIBRUGARH UNIVERSITY</p>-->
+  <p style="font-style: italic; font-size: xx-large; font-weight: bold; color: rgb(141, 156, 167); text-align: center; text-decoration: underline;">
+    BIODIVERSITY OF PLANTS IN DIBRUGARH UNIVERSITY
+</p>
+
+  <div class="describe">
+   
+  <p>
+  The Dibrugarh University, has an  expansive campus, which showcases a rich and diverse plant life, including a variety of orchids, trees, shrubs, and herbs. The university also boasts a botanical garden and includes forest covers, further contributing to the diverse flora.The campus is home to a significant number of orchid species, with 22 different species belonging to 17 genera identified in the 500-acre area. This includes some rare species like Dendrobium nobile and Vanda bicolour, as well as endangered species like Aerides odorata.
+  <p style="font-style: oblique;color: blue;font-size: larger;">Trees and Shrubs:</p>
+The campus features a variety of tree species, some of which are prominent and have been studied for their canopy cover. There are also studies on the taxonomic diversity of shrubby plants within the university, according to a faculty member's webpage. 
+<p style="font-style: oblique;color: blue;font-size: larger;">Herbs:</p>
+A study identified 35 major herb species within the university, classified as either annual or perennial. 
+Botanical Garden:
+The botanical garden, covering 4.63 hectares, is known for its collection of rare, valuable trees, fruits, and medicinal herbs. 
+<p style="font-style: oblique;color: blue;font-size: larger;">Forest Cover:</p>
+The university also includes forest covers, including a tea garden, which further contributes to the overall plant diversity. 
+<p style="font-style: oblique;color: blue;font-size: larger;">Monocots:</p>
+Taxonomic studies have been conducted on monocots within the university campus and nearby areas like Jokai Reserve Forest, according to a faculty member's webpage. 
+
+<p style="font-style: oblique;color: blue;font-size: larger;">Ecological Significance</p>
+The plant biodiversity of Dibrugarh University plays a vital role in maintaining ecological balance. The trees and shrubs provide habitat and food for various bird species, insects, and small mammals. The presence of diverse plant species also helps in carbon sequestration, reducing the impact of pollution and climate change. Additionally, the university's green spaces contribute to temperature regulation, making the campus environment more comfortable for students and faculty.
+
+<p style="font-style: oblique;color: blue;font-size: larger;">Conservation Efforts</p>
+Recognizing the importance of biodiversity, Dibrugarh University has undertaken several conservation initiatives. The botanical garden serves as a research hub, where students and faculty study plant physiology, taxonomy, and ecology. Efforts are also made to protect endangered plant species and promote sustainable practices.
+
+<p style="font-style: normal;color: black;font-size: large;"></p>The university collaborates with environmental organizations and government agencies to implement conservation programs. These initiatives include:
+
+<p>&#8594;Tree plantation drives to increase green cover and combat deforestation.</p>
+
+<p>&#8594;Biodiversity surveys to document and monitor plant species on campus.</p>
+
+<p>&#8594;Educational programs to raise awareness about the importance of plant conservation among students and the local community.</p>
+
+<p style="font-style: oblique;color: blue;font-size: larger;">Challenges and Future Prospects</p>
+Despite its rich biodiversity, Dibrugarh University faces several challenges in maintaining its plant diversity. Urbanization, pollution, and climate change pose threats to the natural vegetation. Encroachment and habitat destruction can lead to the loss of native plant species, affecting the overall ecosystem.
+
+To address these challenges, the university is focusing on sustainable landscaping, incorporating native plants into its green spaces, and promoting eco-friendly practices. Future research in plant biodiversity will likely explore climate resilience, studying how different species adapt to changing environmental conditions.
+
+<p style="font-style: oblique;color: blue;font-size: larger;"">climate</p>
+Dibrugarh University experiences a warm and temperate climate with a distinct rainy season. The yearly average temperature is around 74.3°F (23.5°C), with the hottest months being August and September, and the coolest months being January and February. The rainy season typically runs from May to September, with July and August being the wettest months
+
+<p style="font-style: oblique;color: blue;font-size: larger;""> Diversity of Plant Species</p> 
+The plant biodiversity of Dibrugarh University is shaped by its geographical location in the northeastern part of India, which is known for its high species richness. The campus hosts a variety of trees, shrubs, herbs, and grasses, many of which are native to Assam. The botanical garden plays a crucial role in preserving and studying these species, providing a controlled environment for research and conservation efforts.
+
+<p style="font-style: oblique;color: blue;font-size: larger;""> Among the notable plant species found on campus are:</p>
+
+<p>&#8594; Medicinal plants such as neem (Azadirachta indica), tulsi (Ocimum sanctum), and aloe vera (Aloe barbadensis), which are widely used in traditional medicine.</p>
+
+<p>&#8594; Fruit-bearing trees like mango (Mangifera indica), guava (Psidium guajava), and jackfruit (Artocarpus heterophyllus), contributing to the local ecosystem.
+</p>
+<p>&#8594;Ornamental plants including hibiscus (Hibiscus rosa-sinensis), bougainvillea (Bougainvillea glabra), and various species of orchids, enhancing the aesthetic appeal of the campus.</p>
+
+</p>
+</div>
+
+ <div class="footer">
+        <p>Copyright © 2025 DBMS, Centre for Biotechnology and Bioinformatics, All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
