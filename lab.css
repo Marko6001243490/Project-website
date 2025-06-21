@@ -1,0 +1,50 @@
+body{
+    background-color:#E1EEBC;
+}
+
+.images{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+.images-odd{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: right;
+    line-height: 2;
+}
+.image{
+    width: 250px;
+    height: 250px;
+    float: right;
+    margin-left: 40px;
+   
+   border-radius: 50%
+}
+.image-odd{
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 40px;
+   
+   border-radius: 50%
+}
+hr{
+    border: dotted aqua;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+.pg-btn {
+    display: flex;              /* make it a flex container */
+    flex-wrap: wrap;            /* wrap buttons to next line if needed */
+    justify-content: center;    /* center horizontally */
+    gap: 1rem;                  /* add space between buttons */
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .ftrr{
+    padding-top:  20px;
+  }
+  

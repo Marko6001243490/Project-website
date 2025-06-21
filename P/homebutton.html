@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Web Page</title>
+  <!-- Link Swiper.js CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    .Heading {
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: yellow;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Main Navigation Bar */
+    .navbar {
+      position: fixed;
+      top: 40px;
+      left: 0;
+      right: 0;
+      background-color: blue;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .nav-list {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      align-items: center;
+      padding: 0;
+      position: relative;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      padding: 10px 15px;
+      background-color: red;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      background-color: darkred;
+    }
+
+    /* Dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 150px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 5px;
+      padding: 10px;
+      top: 40px;
+      z-index: 1001;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: black;
+      text-decoration: none;
+      display: block;
+      padding: 8px;
+      border-radius: 3px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: lightgray;
+    }
+
+    /* Search Bar */
+    .search-container {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 998;
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .search {
+      height: 35px;
+      padding-left: 10px;
+      font-size: 16px;
+      border: 1px solid black;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .search-button {
+      height: 35px;
+      width: 35px;
+      margin-left: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background-color: green;
+      color: white;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      top: 135px;
+      width: 200px;
+      padding: 20px;
+    }
+
+    /* Swiper styling */
+    .swiper {
+      padding-left: 50px;
+      padding-top: 70px;
+      width: 90%;
+      height: 400px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body style="padding-top: 130px; padding-left: 310px; height: 1000px;">
+
+  <div class="Heading">PLANT WEB PAGE</div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="#" class="nav-link">HOME</a></li>
+      <li><a href="#" class="nav-link">ABOUT US</a></li>
+      <li class="search-container">
+        <input class="search" type="text" placeholder="Search">
+        <img class="search-button" src="P/Photo/search icon.jpg" alt="Search">
+      </li>
+      <li class="dropdown">
+        <a href="Marko.html" class="nav-link">PLANTS</a>
+        <div class="dropdown-content">
+          <a href="grid_practice.html">Rose</a>
+          <a href="#">Tulsi</a>
+          <a href="#">Cactus</a>
+          <a href="#">Mango Tree</a>
+          <a href="#">Bamboo</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="sidebar">Side bar about us</div>
+
+  <!-- Swiper container -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="P/Photo/image_123.png" alt="Photo 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="P/Photo/IMG_0273.jpg" alt="Photo 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="P/Photo/WhatsApp_Image_2024-09-05_at_19.29.25_a3ff3ae8.jpg" alt="Photo 3">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Include Swiper.js script -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // Initialize Swiper
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <p>Dibrugarh University, located in the lush region of Assam, is home to a rich diversity of plant life that reflects the unique biodiversity of Northeast India. The university's Botany department emphasizes the study and conservation of this natural wealth, offering programs that delve into plant diversity, physiology, taxonomy, and ecology. With a focus on the region's endemic flora, students and researchers explore the potential of plants for sustainable development and human welfare. The campus itself is a green haven, fostering an environment conducive to both academic pursuits and ecological awareness. Through its curriculum and research initiatives, Dibrugarh University plays a vital role in understanding and preserving the botanical treasures of the region.</p>
+
+</body>
+</html>
